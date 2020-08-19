@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="projet1" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/projet1" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+				<Linker>
+					<Add option="-lsfml-audio" />
+					<Add option="-lsfml-graphics" />
+					<Add option="-lsfml-window" />
+					<Add option="-lsfml-system" />
+					<Add library="sfml-graphics-d" />
+					<Add library="sfml-window-d" />
+					<Add library="sfml-system-d" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/projet1" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add option="-DSFML_DYNAMIC" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add option="-lsfml-audio" />
+					<Add option="-lsfml-graphics" />
+					<Add option="-lsfml-window" />
+					<Add option="-lsfml-system" />
+					<Add library="sfml-graphics" />
+					<Add library="sfml-window" />
+					<Add library="sfml-system" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-DSFML_DYNAMICS" />
+			<Add directory="C:/Program Files (x86)/CodeBlocks/SFML-2.5.0/include" />
+		</Compiler>
+		<Linker>
+			<Add library="mingw32" />
+			<Add library="user32" />
+			<Add library="gdi32" />
+			<Add library="winmm" />
+			<Add library="dxguid" />
+			<Add directory="C:/Program Files (x86)/CodeBlocks/SFML-2.5.0/lib" />
+		</Linker>
+		<Unit filename="cb.bmp" />
+		<Unit filename="include/bouton_aide.h" />
+		<Unit filename="include/bouton_apropos.h" />
+		<Unit filename="include/bouton_difficile.h" />
+		<Unit filename="include/bouton_facile.h" />
+		<Unit filename="include/bouton_moyen.h" />
+		<Unit filename="include/bouton_niveau.h" />
+		<Unit filename="include/bouton_quitter.h" />
+		<Unit filename="include/gestion_de_colision.h" />
+		<Unit filename="include/gestion_du_souris.h" />
+		<Unit filename="include/intelligence_artificiel_lion.h" />
+		<Unit filename="include/menu_principal.h" />
+		<Unit filename="include/moaka_tir.h" />
+		<Unit filename="include/moteur_de_jeu.h" />
+		<Unit filename="include/pause_game.h" />
+		<Unit filename="main.cpp" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
